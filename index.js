@@ -10,7 +10,7 @@
 const r = require('rollup')
 
 const startRollup = (config) => (input) => {
-  return function startRollup (log) {
+  return function rollup (log) {
     return r.rollup(config).then((bundle) => {
       const options = Object.assign({}, config)
 
