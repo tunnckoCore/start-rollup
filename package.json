@@ -1,6 +1,6 @@
 {
   "name": "start-rollup",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The [rollup][] task for [start][] runner",
   "repository": "tunnckoCore/start-rollup",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://i.am.charlike.online)",
