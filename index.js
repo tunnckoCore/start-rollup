@@ -13,6 +13,7 @@ const startRollup = (config) => (input) => {
   return function rollup (log) {
     return r.rollup(config).then((bundle) => {
       const options = Object.assign({}, config)
+      log = typeof log === 'function' ? log : () => {}
 
       if (options.dest) {
         log(`transpiling to single destination: ${options.dest}`)
