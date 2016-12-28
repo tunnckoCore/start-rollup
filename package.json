@@ -24,7 +24,7 @@
     "postci": "codecov"
   },
   "dependencies": {
-    "rollup": "^0.38.0"
+    "rollup": "^0.38.2"
   },
   "devDependencies": {
     "codecov": "^1.0.1",
