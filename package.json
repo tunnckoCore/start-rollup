@@ -18,12 +18,16 @@
     "prerelease": "npm test",
     "release": "standard-version --sign --no-verify",
     "precommit": "git add --all",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "preci": "nyc node test.js",
+    "ci": "nyc report --reporter=lcov > coverage.lcov",
+    "postci": "codecov"
   },
   "dependencies": {
-    "rollup": "^0.38.0"
+    "rollup": "^0.38.2"
   },
   "devDependencies": {
+    "codecov": "^1.0.1",
     "commitizen": "^2.9.2",
     "coveralls": "^2.11.15",
     "cz-conventional-changelog": "^1.2.0",
