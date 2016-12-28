@@ -21,7 +21,7 @@
     "commit": "git-cz"
   },
   "dependencies": {
-    "rollup": "^0.38.0"
+    "rollup": "^0.38.2"
   },
   "devDependencies": {
     "commitizen": "^2.9.2",
