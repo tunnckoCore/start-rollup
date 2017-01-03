@@ -21,7 +21,7 @@ test('should transpile to .dest, using Buble', (done) => {
     dest: './node_modules/test.old.js',
     format: 'cjs',
     plugins: [buble()]
-  })()().then(() => {
+  })()(() => {}).then(() => {
     test.strictEqual(exists('./node_modules/test.old.js'), true)
 
     const res = fs.readFileSync('./node_modules/test.old.js', 'utf8')

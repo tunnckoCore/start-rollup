@@ -1,7 +1,7 @@
 {
   "name": "start-rollup",
   "version": "1.0.1",
-  "description": "The [rollup][] task for [start][] runner",
+  "description": "A [start][] runner task for [rollup][] through [rolldown][] api",
   "repository": "tunnckoCore/start-rollup",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://i.am.charlike.online)",
   "precommit.silent": true,
@@ -21,7 +21,8 @@
     "commit": "git-cz"
   },
   "dependencies": {
-    "rollup": "^0.38.2"
+    "extend-shallow": "^2.0.1",
+    "rolldown": "*"
   },
   "devDependencies": {
     "commitizen": "^2.9.2",
